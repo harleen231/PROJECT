@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Awareness</title>
+    <link rel="stylesheet" href="ca3.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="CA3.html" >Home</a> 
+        <a href="a2.html" >About</a>
+        <a href="a3.html" >Services</a>
+        <a href="a4.html" >Contact</a>
+    
+    </div>
+    <div id="home">
+     <h1>MOOD AND MIND</h1>
+    <p>Welcome to Home Page!</p></div>
+
+    <div id="what"><h2><i>Here's what you can do today!</i></h2>
+    <img src="guess-the-number.png" alt="" height="204px" width="250px"> 
+    <img src="mood.jpg" alt=""height="204px" width="250px"> 
+    <img src="images (2).jpg" alt="" height="204px" width="250px"> 
+    <img src="1576217771195.png" alt="" height="204px" width="250px"> 
+    </div>
+    <header>
+        <p>How are you feeling today?</p>
+    </header>
+
+    <main>
+        <div id="content">
+        <div id="feelings">
+            <select id="moodSelect">
+                <option value="">--Select your mood--</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="anxious">Anxious</option>
+                <option value="stressed">Stressed</option>
+                <option value="neutral">Neutral</option>
+            </select>
+            <button onclick="suggestActivities()">Get Suggestions</button>
+        </div>
+
+        <div id="suggestions" class="hidden">
+            <h2>Suggestions:</h2>
+            <ul id="suggestionList"></ul>
+        </div>
+        
+        <div id="games">
+            <h2>Games to Boost Your Mood</h2>
+            <button onclick="startGame('guessing')">Number Guessing Game</button>
+            <!-- <img src="guess-the-number.png" alt="" height="500px" width="500px"> -->
+            <button onclick="startGame('word')">Word Scramble</button>
+        </div>
+        <div id="gameArea" class="hidden">
+            <div id="gameOutput"></div>
+            <button onclick="endGame()">End Game</button>
+        </div>
+        </div>
+    </main>
+
+    <div id="thoughtsSection">
+        <h2>Share Your Thoughts</h2>
+        <textarea id="thoughtsInput" placeholder="Write your thoughts here..." rows="4" cols="50"></textarea><br>
+        <button onclick="shareThoughts()">Share</button>
+        <div id="thoughtsList"></div>
+    </div>
+    
+
+    <footer>
+        <p>Take care of your mental health. You are not alone!</p>
+    </footer>
+
+    <script src="ca3.js"></script>
+</body>
+</html>
